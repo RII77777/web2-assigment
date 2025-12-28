@@ -2,52 +2,47 @@
 
 ## Project Description
 
-This project is a server-side REST API built with Node.js and Express.
-It integrates external APIs and demonstrates how to securely fetch data on the backend and expose it to the frontend.
+TThis project is a backend REST API developed using Node.js and Express.
+It connects to external APIs and demonstrates how to securely retrieve data on the server side and make it available to the frontend.
 
-The application provides:
+The application offers:
 
-Weather data for a given city using OpenWeather API
+Weather information for a specified city via the OpenWeather API
 
-Top news headlines based on the country code using NewsAPI
+Latest news headlines based on a country code using the NewsAPI
 
-All API requests are handled only on the backend.
-API keys are stored securely in environment variables.
+All external API requests are processed exclusively on the backend.
+API keys are securely stored using environment variables.
 
----
+Dependency Installation
 
-## How to Install Dependencies
+Clone the repository:
+git clone https://github.com/Akehdo/web2-assigments/tree/master/assigment2
 
-1. ` git clone https://github.com/Akehdo/web2-assigments/tree/master/assigment2`
-2. Open terminal in the project folder
-3. In terminal: `npm install`
-4. Create a .env file and add your API keys:
+Open a terminal in the project directory
 
-   ```
-   OPENWEATHER_API_KEY=your_openweather_key
-   NEWS_API_KEY=your_newsapi_key
-   BINGX_API_KEY=your-bingx-api-key
-   BINGX_SECRET_KEY=your-bingx-secret-key
-   ```
+Run: npm install
 
-5. In terminal: ` node server.js`
-6. The server will run on: http://localhost:3001
+Create a .env file and add your API keys:
 
-## API Routes
+OPENWEATHER_API_KEY=your_openweather_key
+NEWS_API_KEY=your_newsapi_key
+BINGX_API_KEY=your-bingx-api-key
+BINGX_SECRET_KEY=your-bingx-secret-key
 
-### Weather API
 
-- GET /api/weather - returns current weather data for a given city.
+Start the server with: node server.js
 
-# Example Postman Requests
+The server will be available at: http://localhost:3001
 
-### Query Parameters:
+API Endpoints
+Weather API
 
-- city – city name
+GET /api/weather — returns current weather data for the specified city.
 
 ### GET /api/weather?city=London
 
-![img.png](res/img.png)
+![alt text](<res/Снимок экрана 2025-12-28 191158.png>)
 
 ### Response:
 
@@ -82,7 +77,7 @@ API keys are stored securely in environment variables.
 
 ### GET /api/news?country=US
 
-![img_1.png](res/img_1.png)
+![web2-assigments/assigment2/res/Снимок экрана 2025-12-28 191928.png](<res/Снимок экрана 2025-12-28 191928.png>)
 
 ### Response:
 
