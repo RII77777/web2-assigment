@@ -17,7 +17,7 @@ API keys are securely stored using environment variables.
 Dependency Installation
 
 Clone the repository:
-git clone https://github.com/Akehdo/web2-assigments/tree/master/assigment2
+git clone https://github.com/RII77777/web2-assigment
 
 Open a terminal in the project directory
 
@@ -50,18 +50,16 @@ GET /api/weather — returns current weather data for the specified city.
 [
   {
     {
-	"temperature": 5.04,
-	"description": "clear sky",
-	"coordinates": {
-		"lon": -0.1257,
-		"lat": 51.5085
-	},
-	"feels_like": 0.68,
-	"wind_speed": 6.69,
-	"country": "GB",
-	"rain_last_3h": 0
+      "temperature": 7.19,
+"feelsLike": 4.24,
+"description": "overcast clouds",
+"windSpeed": 4.63,
+"County *
+"lon": -0.1257,
+"lat": 51.5085
+}，
+"rainLast3h" : 0
 }
-  }
 ]
 ```
 
@@ -84,17 +82,19 @@ GET /api/weather — returns current weather data for the specified city.
 ```
 [
    {
-     "source": {
-	     "id": null,
-	     "name": "CNBC"
-     },
-     "author": "Kai Nicol-Schwarz",
-     "title": "Oil giant BP to sell 65% stake in $10 billion Castrol unit - CNBC",
-     "description": "The oil giant is looking to divest $20 billion of its assets by the end of 2027.",
-     "url": "https://www.cnbc.com/2025/12/24/bp-to-sell-65percent-stake-in-10-billion-castrol-lubricants-to-stonepeak.html",
-     "urlToImage": "https://image.cnbcfm.com/api/v1/image/108152371-1748602159864-gettyimages-2199864900-SAFRICA_CASTROL.jpeg?v=1766561657&w=1920&h=1080",
-     "publishedAt": "2025-12-24T07:46:54Z",
-     "content": "Britain's BP has agreed to sell a 65% shareholding in lubricants business Castrol to Stonepeak for $6 billion, months on from the oil giant seeking a buyer for the unit.\r\nThe deal comes as the compan… [+2293 chars]"
+     "title": "Saudi-led coalition in Yemen warns UAE-backed separatists of immediate action - ABC News" ,
+"description": "The Saudi-led coalition in Yemen has warned it will respond immediately to any military movements of separatists backed by the United Arab Emirates that
+undermine de-escalation efforts in the south, as the United States urged diplomacy",
+"url": "https://abcnews.go.com/International/wireStory/saudi-led-coalition-yemen-warns-uae-backed-separatists-128717707",
+"source": "ABC News"
+"title": "ADHD drugs may work indirectly to boost attention - NPR",
+"description": "Drugs like Adderall and Ritalin appear to help children with ADHD by activating brain areas involved in alertness and motivation.",
+"url": "https://www.npr.org/sections/shots-health-news/2025/12/27/nx-s1-5658291/adhd-adderall-ritalin-mechanism",
+"source": "NPR"
+"title": "Trump to POLITICO: Midterm elections will be about 'pricing' - Politico",
+"description": "The president also said, "If you get rid of the filibuster, you're not going to have a shutdown."",
+"url": "https://www.politico.com/news/2025/12/27/trump-to-politico-midterm-elections-will-be-about-pricing-00706877",
+"source": "Politico"
    },
 ]
 ```
